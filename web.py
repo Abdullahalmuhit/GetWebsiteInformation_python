@@ -16,16 +16,22 @@ info = tldextract.extract(url)
 
 def get_status():
     response = requests.get('https://'+url)
-    status = response.status_code
-    if status == 200:
-        print("Website Exist")
-    else:
-        print("There is a problem on your website")
+    try:
+        status = response.status_code
+        if status == 200:
+            print("Website Exist")
+        else:
+            print("There is a problem on your website")
+    except Exception as e:
+        print(str(e))
 
 def dnfresolver():
     answers = dns.resolver.query(url,'NS')
-    for server in answers:
-        print (server)
+    try:
+        for server in answers:
+            print (server)
+    except Exception as e:
+        print(str(e))        
     
 
 def get_ip_servername():
