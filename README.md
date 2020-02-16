@@ -1,7 +1,7 @@
 # GetWebsiteInformation_python
 Get website information like Server, X-Powered-By or Language, X-Country-Code etc
 
-if you want get all information about this site then use only,
+if you want to get all information about this site then use only,
 
 
 req = requests.get('https://www.facebook.com/')
