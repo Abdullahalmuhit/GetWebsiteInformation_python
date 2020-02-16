@@ -10,6 +10,9 @@ then you will get all information about this site
 
 <h1>First you need to install requirements.txt file by using pip install -r requirements.txt command</h1>
 
+## Usage
+
+```python
 
 import requests
 import socket
