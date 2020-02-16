@@ -3,7 +3,7 @@ Get website information like Server, X-Powered-By or Language, X-Country-Code et
 
 if you want you use only,
 ## Usage
-``python
+```python
 
 req = requests.get('https://www.facebook.com/')
 print(req.headers)
