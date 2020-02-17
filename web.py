@@ -56,7 +56,7 @@ print("Domain with suffix: ", info.registered_domain)
 print("Full Domain: ", '.'.join(info))
 
 req = requests.get('http://'+url)
-headers = ['Server', 'Date', 'Via', 'X-Powered-By', 'X-Country-Code', 'Connection', 'Content-Type','laravel_session']
+headers = ['Server', 'Date', 'Via', 'X-Powered-By', 'X-Country-Code', 'Connection', 'Content-Type']
 for header in headers:
     try:
         result = req.headers[header]
